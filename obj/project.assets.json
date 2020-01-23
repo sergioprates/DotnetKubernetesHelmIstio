@@ -1,0 +1,187 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "prometheus-net/3.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/Prometheus.NetCore.dll": {},
+          "lib/netcoreapp2.1/Prometheus.NetStandard.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Prometheus.NetCore.dll": {},
+          "lib/netcoreapp2.1/Prometheus.NetStandard.dll": {}
+        }
+      },
+      "prometheus-net.AspNetCore/3.4.0": {
+        "type": "package",
+        "dependencies": {
+          "prometheus-net": "3.4.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Prometheus.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Prometheus.AspNetCore.dll": {}
+        }
+      },
+      "prometheus-net.DotNetRuntime/3.3.0": {
+        "type": "package",
+        "dependencies": {
+          "prometheus-net": "3.1.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/prometheus-net.DotNetRuntime.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/prometheus-net.DotNetRuntime.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "prometheus-net/3.4.0": {
+      "sha512": "M/zn8kwV/orQLw4XAokpUaf0l0xGeB3IuMwLCAVxgK5j0iZPkOZIip5Jh8EoIwCNwdGgCqwnZbwGAqjTnejmqw==",
+      "type": "package",
+      "path": "prometheus-net/3.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/prometheus-net-logo.png",
+        "lib/net461/Prometheus.NetStandard.dll",
+        "lib/net461/Prometheus.NetStandard.pdb",
+        "lib/net461/Prometheus.NetStandard.xml",
+        "lib/netcoreapp2.1/Prometheus.NetCore.deps.json",
+        "lib/netcoreapp2.1/Prometheus.NetCore.dll",
+        "lib/netcoreapp2.1/Prometheus.NetCore.pdb",
+        "lib/netcoreapp2.1/Prometheus.NetCore.xml",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.deps.json",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.dll",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.pdb",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.xml",
+        "lib/netstandard2.0/Prometheus.NetStandard.deps.json",
+        "lib/netstandard2.0/Prometheus.NetStandard.dll",
+        "lib/netstandard2.0/Prometheus.NetStandard.pdb",
+        "lib/netstandard2.0/Prometheus.NetStandard.xml",
+        "prometheus-net.3.4.0.nupkg.sha512",
+        "prometheus-net.nuspec"
+      ]
+    },
+    "prometheus-net.AspNetCore/3.4.0": {
+      "sha512": "b5cxrlRiSSU0evNSGyopDziIw+VtOeS6Tj8o9lc1jsPfMQp2leSazNh6JxhKvD5UxEUDyja+39wrSeMJNgqaDA==",
+      "type": "package",
+      "path": "prometheus-net.aspnetcore/3.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/prometheus-net-logo.png",
+        "lib/netcoreapp3.0/Prometheus.AspNetCore.deps.json",
+        "lib/netcoreapp3.0/Prometheus.AspNetCore.dll",
+        "lib/netcoreapp3.0/Prometheus.AspNetCore.pdb",
+        "lib/netcoreapp3.0/Prometheus.AspNetCore.xml",
+        "lib/netstandard2.0/Prometheus.AspNetCore.deps.json",
+        "lib/netstandard2.0/Prometheus.AspNetCore.dll",
+        "lib/netstandard2.0/Prometheus.AspNetCore.pdb",
+        "lib/netstandard2.0/Prometheus.AspNetCore.xml",
+        "prometheus-net.aspnetcore.3.4.0.nupkg.sha512",
+        "prometheus-net.aspnetcore.nuspec"
+      ]
+    },
+    "prometheus-net.DotNetRuntime/3.3.0": {
+      "sha512": "9L7tDBWmE1hBPasLJm33miujnuq0a3Gom/RRURwXAlWzuYbt3jEhjU9dMUY/kKnmV/ztgcU8azTMD/kPFowmIw==",
+      "type": "package",
+      "path": "prometheus-net.dotnetruntime/3.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp2.2/prometheus-net.DotNetRuntime.dll",
+        "lib/netcoreapp2.2/prometheus-net.DotNetRuntime.pdb",
+        "lib/netcoreapp2.2/prometheus-net.DotNetRuntime.xml",
+        "lib/netcoreapp3.0/prometheus-net.DotNetRuntime.dll",
+        "lib/netcoreapp3.0/prometheus-net.DotNetRuntime.pdb",
+        "lib/netcoreapp3.0/prometheus-net.DotNetRuntime.xml",
+        "lib/netstandard2.1/prometheus-net.DotNetRuntime.dll",
+        "lib/netstandard2.1/prometheus-net.DotNetRuntime.pdb",
+        "lib/netstandard2.1/prometheus-net.DotNetRuntime.xml",
+        "prometheus-net.dotnetruntime.3.3.0.nupkg.sha512",
+        "prometheus-net.dotnetruntime.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "prometheus-net.AspNetCore >= 3.4.0",
+      "prometheus-net.DotNetRuntime >= 3.3.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/skywalker/.nuget/packages/": {},
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/develop/rascunhos/TodoApi/TodoApi.csproj",
+      "projectName": "TodoApi",
+      "projectPath": "/develop/rascunhos/TodoApi/TodoApi.csproj",
+      "packagesPath": "/home/skywalker/.nuget/packages/",
+      "outputPath": "/develop/rascunhos/TodoApi/obj/",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/home/skywalker/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "prometheus-net.AspNetCore": {
+            "target": "Package",
+            "version": "[3.4.0, )"
+          },
+          "prometheus-net.DotNetRuntime": {
+            "target": "Package",
+            "version": "[3.3.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

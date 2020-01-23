@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app1
+  labels:
+    name: app1
+spec:
+  selector:
+    matchLabels:
+      name: app1
+  template:
+    metadata:
+      labels:
+        name: app1
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: "{{ index .Values.paths 0 }}/metrics"
+        prometheus.io/port: {{ .Values.port | quote }}
+    spec:
+      containers:
+      - name: app1
+        image: app1:7
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
